@@ -1,0 +1,11 @@
+name: Hello-World         # the name of the workflow that shows on ui
+
+on:
+  workflow_dispatch       # triggers workflow through ui
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "HELLO WORLD!!!"
